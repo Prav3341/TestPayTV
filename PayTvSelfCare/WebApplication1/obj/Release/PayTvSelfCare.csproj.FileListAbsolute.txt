@@ -1,0 +1,104 @@
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\DotNetOpenAuth.Core.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\System.Web.Providers.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\WebGrease.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\DotNetOpenAuth.Core.xml
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Release\WebApplication1.dll
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Release\WebApplication1.pdb
+C:\Users\devendra.sharma\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Release\PayTvSelfCare.csprojResolveAssemblyReference.cache
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\WebApplication1.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\WebApplication1.pdb
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\Antlr3.Runtime.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\AspNet.ScriptManager.jQuery.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.AspNet.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.Core.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OAuth.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OpenId.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\EntityFramework.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\EPPlus.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\itextsharp.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\itextsharp.pdfa.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\MCPG.CCA.Util.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\Newtonsoft.Json.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\NReco.PdfGenerator.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\System.Json.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\System.Web.Optimization.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\System.Web.Providers.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\WebGrease.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\EntityFramework.xml
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.Core.xml
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OAuth.xml
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OpenId.xml
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.AspNet.xml
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\obj\Release\PayTvSelfCare.csprojResolveAssemblyReference.cache
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\obj\Release\WebApplication1.dll
+D:\Release\PayTvSelfCare\Rel 4.0\PayTvSelfCare\WebApplication1\obj\Release\WebApplication1.pdb
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\WebApplication1.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\WebApplication1.pdb
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\Antlr3.Runtime.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\AspNet.ScriptManager.jQuery.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.AspNet.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.Core.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OAuth.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OpenId.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\EntityFramework.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\EPPlus.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\itextsharp.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\itextsharp.pdfa.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\MCPG.CCA.Util.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\Newtonsoft.Json.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\NReco.PdfGenerator.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\System.Json.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\System.Web.Optimization.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\System.Web.Providers.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\WebGrease.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\EntityFramework.xml
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.Core.xml
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OAuth.xml
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OpenId.xml
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\bin\DotNetOpenAuth.AspNet.xml
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\obj\Release\PayTvSelfCare.csprojResolveAssemblyReference.cache
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\obj\Release\WebApplication1.dll
+D:\Release\PayTvSelfCare\Rel 5.0\PayTvSelfCare\WebApplication1\obj\Release\WebApplication1.pdb

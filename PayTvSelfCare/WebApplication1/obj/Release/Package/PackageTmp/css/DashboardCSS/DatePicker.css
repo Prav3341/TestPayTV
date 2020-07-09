@@ -1,0 +1,94 @@
+﻿/*DatePicker Style class by Vìkráñt
+.DtpDivClass { position: absolute; z-index: 2; width: 20.3%; border: 1px solid #ddd; background: #fff; }
+.DtpTableClass { width: 100%; color: #2D87B7; }
+    .DtpTableClass thead th { border-bottom: 1px solid #ddd; table-layout: fixed; }
+        .DtpTableClass thead th:nth-child(1), .DtpTableClass thead th:nth-child(3), .DtpTableClass thead th:nth-child(4), .DtpTableClass thead th:nth-child(5), .DtpTableClass tbody tr:nth-child(2) td:nth-child(1), .DtpTableClass thead th:nth-child(2), .DtpTableClass tbody tr:nth-child(2) td:nth-child(2), .DtpTableClass tbody tr:nth-child(2) td:nth-child(3), .DtpTableClass tbody tr:nth-child(2) td:nth-child(4), .DtpTableClass tbody tr:nth-child(2) td:nth-child(5), .DtpTableClass tbody tr:nth-child(1) td:nth-child(3), .DtpTableClass tbody tr:nth-child(3) td:nth-child(3), .DtpTableClass tbody tr:nth-child(4) td:nth-child(1) { border-right: 1px solid #ddd; table-layout: fixed; }
+    .DtpTableClass tbody tr:nth-child(2) { color: #0e0e0e; }
+    .DtpTableClass tbody tr td:nth-child(1) { width: 24%; }
+    .DtpTableClass tbody tr td:nth-child(2) { width: 49%; }
+    .DtpTableClass tbody tr td:nth-child(3) { width: 24%; }
+    .DtpTableClass tbody { background-color: #fff; text-align: center; }
+        .DtpTableClass tbody label { cursor: pointer; }
+        .DtpTableClass tbody tr:nth-child(1) td:nth-child(1), .DtpTableClass tbody tr:nth-child(1) td:nth-child(2), .DtpTableClass tbody tr:nth-child(1) td:nth-child(3), .DtpTableClass tbody tr:nth-child(3) td:nth-child(1), .DtpTableClass tbody tr:nth-child(3) td:nth-child(2), .DtpTableClass tbody tr:nth-child(3) td:nth-child(3) { height: 25px; }
+        .DtpTableClass tbody tr:nth-child(1) td:hover, .DtpTableClass tbody tr:nth-child(3) td:hover { background: #ddd; cursor: pointer; }
+        .DtpTableClass tbody tr td { border-bottom: 1px solid #ddd; }
+DatePicker Style class by Vìkráñt*/
+
+
+/*New Date Picker Style*/
+td, th { text-align: center !Important; padding: 4px 5px !important; }
+.DatePickerBack { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: -1; background: rgba(0,0,0,0.5); opacity: 0; }
+    .DatePickerBack .DatePicker { position: relative; margin: 10% auto; width: 20%; }
+        .DatePickerBack .DatePicker .CurDate { float: none; width: 100%; height: 11em; -moz-border-radius: 3px 0px 0px 3px; -webkit-border-radius: 3px 0px 0px 3px; border-radius: 3px 0px 0px 3px; background-color: #fda300; color: #fff; }
+            .DatePickerBack .DatePicker .CurDate div:first-child { width: 100%; height: 1.4em; border-bottom: 1px solid rgba(223,223,223,0.5); -moz-box-shadow: 0 0px 6px -6px black; -webkit-box-shadow: 0 0px 6px -6px black; box-shadow: 0 0px 6px -6px black; text-align: center; font-size: 1.7em; }
+            .DatePickerBack .DatePicker .CurDate table { width: 100%; text-align: center; font-weight: normal; }
+                .DatePickerBack .DatePicker .CurDate table tr:first-child, .DatePickerBack .DatePicker .CurDate table tr:last-child { font-size: 16px; }
+                .DatePickerBack .DatePicker .CurDate table tr:nth-of-type(2) { font-size: 35px; }
+        .DatePickerBack .DatePicker .MnthClass { float: left; width: 100%; -moz-border-radius: 0px 3px 0px 0px; -webkit-border-radius: 0px 3px 0px 0px; border-radius: 0px 3px 0px 0px; background-color: #fff; }
+        .DatePickerBack .DatePicker #dtPickerCtrlDiv { -webkit-margin-before: 0%; float: left; margin-right: 0.6em; width: 100%; border-top: 1px solid #fda300; -moz-border-radius: 0px 0px 3px 0px; -webkit-border-radius: 0px 0px 3px 0px; border-radius: 0px 0px 3px 0px; background-color: #fff; font-weight: 600; line-height: 1.6; }
+            /*.DatePickerBack .DatePicker #dtPickerCtrlDiv span { float: right; }*/
+            .DatePickerBack .DatePicker #dtPickerCtrlDiv span a { color: #fda200; text-decoration: none; }
+        .DatePickerBack .DatePicker .MnthClass div:first-child { width: 100%; height: 1.4em; border-bottom: 1px solid rgba(223,223,223,0.5); -moz-box-shadow: 0 6px 6px -6px black; -webkit-box-shadow: 0 6px 6px -6px black; box-shadow: 0 6px 6px -6px black; text-align: center; font-size: 21px; float: left; }
+        .DatePickerBack .DatePicker .MnthClass div:nth-of-type(2) { height: 17em; }
+            .DatePickerBack .DatePicker .MnthClass div:nth-of-type(2) div:first-child { height: 1.4em; border-bottom: 1px dashed #ddd; -moz-box-shadow: 0px 0px transparent; -webkit-box-shadow: 0px 0px transparent; box-shadow: 0px 0px transparent; color: #fda300; }
+            .DatePickerBack .DatePicker .MnthClass div:nth-of-type(2) div:last-child { width: 100%; }
+                .DatePickerBack .DatePicker .MnthClass div:nth-of-type(2) div:last-child table { width: 100%; text-align: center; }
+                    .DatePickerBack .DatePicker .MnthClass div:nth-of-type(2) div:last-child table thead { color: #bbb; }
+                        .DatePickerBack .DatePicker .MnthClass div:nth-of-type(2) div:last-child table thead th { width: auto; font-weight: 600; }
+                            .DatePickerBack .DatePicker .MnthClass div:nth-of-type(2) div:last-child table thead th:last-child, .DatePickerBack .DatePicker .MnthClass div:nth-of-type(2) div:last-child table tr td:nth-of-type(7) { color: #ff1212; font-weight: 600; }
+                                .DatePickerBack .DatePicker .MnthClass div:nth-of-type(2) div:last-child table tr td:nth-of-type(7):hover { border-right: none; }
+                    .DatePickerBack .DatePicker .MnthClass div:nth-of-type(2) div:last-child table tr { line-height: 1.8; }
+                        .DatePickerBack .DatePicker .MnthClass div:nth-of-type(2) div:last-child table tr td { width: 1em; border: 1px solid #fff; table-layout: fixed; line-height: 1.5; }
+                            .DatePickerBack .DatePicker .MnthClass div:nth-of-type(2) div:last-child table tr td span { padding: 2px 4px 2px 4px; font-weight: normal; }
+                            .DatePickerBack .DatePicker .MnthClass div:nth-of-type(2) div:last-child table tr td:not(:empty):hover { outline: none; background: #fda300; cursor: pointer;  color: #fff;}
+                            .DatePickerBack .DatePicker .MnthClass div:nth-of-type(2) div:last-child table tr td.SelectedDate { border-color: #fda300; background-color: #fda300; color: #fff; cursor: pointer; }
+                            .DatePickerBack .DatePicker .MnthClass div:nth-of-type(2) div:last-child table tr td:first-child { border-left: none; }
+[data-monthcontainer="true"] span { cursor: pointer; }
+#MnthSwaper > div { height: 10em; }
+    #MnthSwaper > div > div { border-bottom: 1px solid #bbb; -moz-box-shadow: 0px 0px transparent; -webkit-box-shadow: 0px 0px transparent; box-shadow: 0px 0px transparent; color: #fda200; font-weight: 600; font-size: 1em; }
+        #MnthSwaper > div > div span { cursor: pointer; }
+    #MnthSwaper > div .DtpMnth { width: 100%; height: 84.5%; }
+        #MnthSwaper > div .DtpMnth td { width: 4em; height: 2.45em; border: 1px dashed #fff; table-layout: fixed; }
+            #MnthSwaper > div .DtpMnth td:hover { background: #fda200; cursor: pointer;  color:#fff}
+            #MnthSwaper > div .DtpMnth td:first-child:hover { border-left: none; }
+            #MnthSwaper > div .DtpMnth td:last-child:hover { border-right: none; }
+        #MnthSwaper > div .DtpMnth tr:first-child td:hover { border-top: none; }
+        #MnthSwaper > div .DtpMnth tr:last-child td:hover { border-bottom: none; }
+
+        #MnthSwaper > div .DtpMnth td.selectedMnth { border-color: #fda200; background-color: #fda200; color: #fff; }
+        #MnthSwaper > div .DtpMnth td.MnLess { color: #ccc; }
+#YearSwaper > div { height: 10em; }
+    #YearSwaper > div [data-navyear="true"] { border-bottom: 1px solid #fda200; -moz-box-shadow: 0px 0px transparent; -webkit-box-shadow: 0px 0px transparent; box-shadow: 0px 0px transparent; font-size: 1em; }
+        #YearSwaper > div [data-navyear="true"] span:first-child { float: left; padding-top: 2%; font-size: 0.6em; }
+        #YearSwaper > div [data-navyear="true"] span:nth-of-type(2) { float: right; padding-right: 2%; }
+            #YearSwaper > div [data-navyear="true"] span:nth-of-type(2) i:hover { cursor: pointer; }
+            #YearSwaper > div [data-navyear="true"] span:nth-of-type(2) i:active { color: #fda200; }
+    #YearSwaper > div div.DtpYearSelect table { width: 100%; height: 8em; }
+        #YearSwaper > div div.DtpYearSelect table tr td { border: 1px dashed #fff; }
+            #YearSwaper > div div.DtpYearSelect table tr td:hover { background: #fda200; cursor: pointer; color:#fff}
+            #YearSwaper > div div.DtpYearSelect table tr td.SelectedYear { border-style: solid; background-color: #fda200; color: #fff; }
+            #YearSwaper > div div.DtpYearSelect table tr td:first-child { border-left: none; }
+        #YearSwaper > div div.DtpYearSelect table tr:last-child td { border-bottom: none; }
+        #YearSwaper > div div.DtpYearSelect table tr:first-child td { border-top: none; }
+
+#CurTime .DyDate { text-align: center; font-size: 24px; }
+    #CurTime .DyDate input[type=number] { float: left; margin-top: 8px; width: 32px; }
+    #CurTime .DyDate span { float: left; padding: 3px 1px 1px 1px; }
+    #CurTime .DyDate select { float: left; margin-top: 8px; margin-left: 8px; width: 47px; }
+.todayDtp { margin-top: 2.11em; width: 100%; border-top: 1px solid #fff; text-align: center; font-size: 1.5em; }
+    .todayDtp span { cursor: pointer; }
+
+button:focus { outline: none; background-color: #fda300; }
+/*New Time Picker Style*/
+/*New Time Picker Style*/
+/*New Date Picker Style*/
+/*media tag Function*/
+@media only screen and (max-width: 1540px) {
+    .DatePickerBack .DatePicker { width:27% }
+}
+@media only screen and (max-width: 1000px) {
+    .DatePickerBack .DatePicker { width:48% }
+}
+@media only screen and (max-width: 550px) {
+    .DatePickerBack .DatePicker { width:90% }
+}

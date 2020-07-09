@@ -1,0 +1,68 @@
+﻿@font-face { font-family: "Material-Design-Icons"; src: url("../font/material-design-icons/Material-Design-Iconsd41d.eot?#iefix") format("embedded-opentype"),url("../font/material-design-icons/Material-Design-Icons.woff") format("woff"),url("../font/material-design-icons/Material-Design-Icons.ttf") format("truetype"),url("../font/material-design-icons/Material-Design-Icons.svg#Material-Design-Icons") format("svg"); font-weight: normal; font-style: normal; }
+.mdi-action-work:before { content: "\e6a2"; }
+.mdi-alert-error:before { content: "\e6a3"; }
+.mdi-alert-warning:before { content: "\e6a4"; }
+[class^="mdi-"], [class*="mdi-"] { speak: none; display: inline-block; font-family: "Material-Design-Icons"; font-style: normal; font-weight: normal; font-variant: normal; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; transform: translate(0, 0); }
+    [class^="mdi-"]:before, [class*="mdi-"]:before { display: inline-block; speak: none; text-decoration: inherit; }
+    [class^="mdi-"].pull-left, [class*="mdi-"].pull-left { margin-right: .3em; }
+    [class^="mdi-"].pull-right, [class*="mdi-"].pull-right { margin-left: .3em; }
+    [class^="mdi-"].mdi-lg:before, [class^="mdi-"].mdi-lg:after, [class*="mdi-"].mdi-lg:before, [class*="mdi-"].mdi-lg:after { font-size: 1.33333333em; line-height: 0.75em; vertical-align: -15%; }
+    [class^="mdi-"].mdi-2x:before, [class^="mdi-"].mdi-2x:after, [class*="mdi-"].mdi-2x:before, [class*="mdi-"].mdi-2x:after { font-size: 2em; }
+    [class^="mdi-"].mdi-3x:before, [class^="mdi-"].mdi-3x:after, [class*="mdi-"].mdi-3x:before, [class*="mdi-"].mdi-3x:after { font-size: 3em; }
+    [class^="mdi-"].mdi-4x:before, [class^="mdi-"].mdi-4x:after, [class*="mdi-"].mdi-4x:before, [class*="mdi-"].mdi-4x:after { font-size: 4em; }
+    [class^="mdi-"].mdi-5x:before, [class^="mdi-"].mdi-5x:after, [class*="mdi-"].mdi-5x:before, [class*="mdi-"].mdi-5x:after { font-size: 5em; }
+[class^="mdi-device-signal-cellular-"]:after, [class^="mdi-device-battery-"]:after, [class^="mdi-device-battery-charging-"]:after, [class^="mdi-device-signal-cellular-connected-no-internet-"]:after, [class^="mdi-device-signal-wifi-"]:after, [class^="mdi-device-signal-wifi-statusbar-not-connected"]:after, .mdi-device-network-wifi:after { opacity: .3; position: absolute; left: 0; top: 0; z-index: 1; display: inline-block; speak: none; text-decoration: inherit; }
+[class^="mdi-device-signal-cellular-"]:after { content: "\e758"; }
+[class^="mdi-device-battery-"]:after { content: "\e735"; }
+[class^="mdi-device-battery-charging-"]:after { content: "\e733"; }
+[class^="mdi-device-signal-cellular-connected-no-internet-"]:after { content: "\e75d"; }
+[class^="mdi-device-signal-wifi-"]:after, .mdi-device-network-wifi:after { content: "\e765"; }
+[class^="mdi-device-signal-wifi-statusbasr-not-connected"]:after { content: "\e8f7"; }
+.mdi-action-wallet-membership:before { content: "\e6a0"; }
+.mdi-device-signal-cellular-off:after, .mdi-device-signal-cellular-null:after, .mdi-device-signal-cellular-no-sim:after, .mdi-device-signal-wifi-off:after, .mdi-device-signal-wifi-4-bar:after, .mdi-device-signal-cellular-4-bar:after, .mdi-device-battery-alert:after, .mdi-device-signal-cellular-connected-no-internet-4-bar:after, .mdi-device-battery-std:after, .mdi-device-battery-full .mdi-device-battery-unknown:after { content: ""; }
+.mdi-fw { width: 1.28571429em; text-align: center; }
+.mdi-ul { padding-left: 0; margin-left: 2.14285714em; list-style-type: none; }
+    .mdi-ul > li { position: relative; }
+.mdi-li { position: absolute; left: -2.14285714em; width: 2.14285714em; top: 0.14285714em; text-align: center; }
+    .mdi-li.mdi-lg { left: -1.85714286em; }
+.mdi-border { padding: .2em .25em .15em; border: solid 0.08em #eeeeee; border-radius: .1em; }
+.mdi-spin { -webkit-animation: mdi-spin 2s infinite linear; animation: mdi-spin 2s infinite linear; -webkit-transform-origin: 50% 50%; -moz-transform-origin: 50% 50%; -o-transform-origin: 50% 50%; transform-origin: 50% 50%; }
+.mdi-pulse { -webkit-animation: mdi-spin 1s steps(8) infinite; animation: mdi-spin 1s steps(8) infinite; -webkit-transform-origin: 50% 50%; -moz-transform-origin: 50% 50%; -o-transform-origin: 50% 50%; transform-origin: 50% 50%; }
+
+.mdi-navigation-check:before { content: "\e8a7"; }
+.loader { position: relative; margin: 0 auto; width: 50px; }
+
+    .loader:before { content: ''; display: block; padding-top: 100%; }
+
+.circular { animation: rotate 2s linear infinite; height: 100%; transform-origin: center center; width: 100%; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; }
+
+.path { stroke-dasharray: 1, 200; stroke-dashoffset: 0; animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite; stroke-linecap: round; }
+
+@keyframes rotate {
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes dash {
+    0% { stroke-dasharray: 1, 200; stroke-dashoffset: 0; }
+    50% { stroke-dasharray: 89, 200; stroke-dashoffset: -35px; }
+    100% { stroke-dasharray: 89, 200; stroke-dashoffset: -124px; }
+}
+
+@keyframes color {
+    100%, 0% { stroke: #d62d20; }
+    40% { stroke: #0057e7; }
+    66% { stroke: #008744; }
+    80%, 90% { stroke: #eee; }
+}
+/*$green: #008744;
+$blue: #0057e7;
+$red: #d62d20;
+$yellow: #ffa700;
+$white: #eee;*/
+
+/*// scaling... any units*/
+/*width: 100px;*/
+
+/*// demo-specific*/
+
+.showbox {bottom: 0; left: 0; right: 0; padding: 5%; }

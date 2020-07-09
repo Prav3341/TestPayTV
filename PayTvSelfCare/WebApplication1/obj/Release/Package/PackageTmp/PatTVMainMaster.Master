@@ -1,0 +1,384 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PatTVMainMaster.master.cs" Inherits="WebApplication1.PatTVMainMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>PayTvSelfCare</title>
+    <link rel="icon" href="images/others/PaytvLogo.png" type="image/png" sizes="16x16" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- Favicons-->
+    <%--<link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />--%>
+
+    <!-- CORE CSS-->
+    <%--<link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />--%>
+    <link href="css/DashboardCSS/materialize.min.css?v=<%= System.Configuration.ConfigurationManager.AppSettings["ReleaseVersion"] %>.0" rel="stylesheet" />
+
+    <link href="css/DashboardCSS/style.min.css?v=<%= System.Configuration.ConfigurationManager.AppSettings["ReleaseVersion"] %>.0" rel="stylesheet" />
+
+    <%-- <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection" />--%>
+
+    <link href="css/DashboardCSS/perfect-scrollbar.css" rel="stylesheet" />
+    <%--<link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection" />--%>
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <%--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />--%>
+    <%--<link href="css/jquery-confirm.css" rel="stylesheet" />--%>
+    <link href="css/DashboardCSS/jquery-confirm.css" rel="stylesheet" />
+    <%--<link href="css/Msgbox.css" rel="stylesheet" />--%>
+    <link href="css/DashboardCSS/Msgbox.css?v=<%= System.Configuration.ConfigurationManager.AppSettings["ReleaseVersion"] %>.0" rel="stylesheet" />
+    <%--<link href="css/stepper.css" rel="stylesheet" />--%>
+
+    <link href="css/DashboardCSS/stepper.css?v=<%= System.Configuration.ConfigurationManager.AppSettings["ReleaseVersion"] %>.0" rel="stylesheet" />
+    <!-- ================================================
+    Scripts
+    ================================================ -->
+
+    <!-- jQuery Library -->
+    <%-- <script src="js/jquery-1.12.3.min.js"></script>--%>
+
+    <script src="js/Dashboard_Js/jquery-1.11.2.min.js"></script>
+    <script src="js/Dashboard_Js/jquery-1.10.2.js"></script>
+    <script src="js/Dashboard_Js/jquery-ui.js"></script>
+    <%-- <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>--%>
+    <!--materialize js-->
+    <script src="js/Dashboard_Js/materialize.min.js"></script>
+    <%--<script src="js/Dashboard_Js/materialize.min.js"></script>--%>
+    <!--scrollbar-->
+    <%-- <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>--%>
+    <script src="js/Dashboard_Js/perfect-scrollbar.min.js"></script>
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <%--<script type="text/javascript" src="js/plugins/plugins.min.js"></script>--%>
+    <script src="js/Dashboard_Js/plugins.js"></script>
+    <%--<script type="text/javascript" src="js/plugins/jquery-confirm.js"></script>--%>
+    <script src="js/Dashboard_Js/jquery-confirm.js"></script>
+    <script src="js/Dashboard_Js/MsgBox.js"></script>
+    <script src="js/Dashboard_Js/Stepper.js"></script>
+    <script src="js/Dashboard_Js/jquery-confirm.js"></script>
+    <script src="js/fromjs/DashCommon.js?v=<%= System.Configuration.ConfigurationManager.AppSettings["ReleaseVersion"] %>.0"></script>
+    <script src="js/Dashboard_Js/RstForm/common.js?v=<%= System.Configuration.ConfigurationManager.AppSettings["ReleaseVersion"] %>.0"></script>
+    <style>
+        .search-box .app-search { position: absolute; margin: 0px; display: block; z-index: 110; width: 100%; top: -1px; display: none; left: 0px; }
+            .search-box .app-search input { width: 97%; background: #fff; padding: 25px 40px 25px 20px; border-radius: 0px; font-size: 17px; -webkit-transition: 0.5s ease-in; -o-transition: 0.5s ease-in; transition: 0.5s ease-in; height: 15px; color: #000; }
+            .search-box .app-search .srh-btn { position: absolute; top: 0px; cursor: pointer; background: #ffffff; width: 15px; height: 15px; right: 32px; font-size: 14px; color: #000; }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        <form id="Form2" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    </form>
+    <!-- Start Page Loading -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- End Page Loading -->
+
+
+    <div id="Liteloding-wrapper">
+        <div id="Liteloding"></div>
+    </div>
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- START HEADER -->
+    <header id="header" class="page-topbar">
+        <!-- start header nav-->
+        <div class="navbar-fixed">
+            <nav class="navbar-color">
+                <div class="nav-wrapper">
+
+                    <ul class="left search-box">
+                        <li>
+                            <form class="app-search" style="display: none;">
+                                <input type="text" id="SearchBoxRecomnded" class="form-control" placeholder="Search Packages and Channels" autocomplete="on" onkeyup="javascript:AutoSelect(this);" />
+
+                                <a id="RecomdedSearchClose" onclick=" javascript:CloseSearchBox(); return false;" class="srh-btn"><i class="mdi-navigation-close modal-close"></i></a>
+                            </form>
+                            <a href="javascript:void(0);" onclick="document.location.replace('../MyDashboard');" class="brand-logo darken-1">
+                                <img src="images/others/PaytvLogo.png" id="MasterLogo" />
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="right hide-on-med-and-down">
+                        <!-- chat-collapse-->
+                        <li id="RecomndedSearch">
+                            <a href="javascript:void(0);" title="Search" onclick="javascript:SearchPackages(); return false;" class="waves-effect waves-block waves-light">
+                                <i class="mdi-action-search"></i>
+                            </a>
+
+                        </li>
+                        <li id="PrePaidWallet" style="display: none;"><a href="javascript:void(0);" onclick="javascript:GetPayment(); return false;" style="cursor:default"  title="My Wallet" class="waves-effect waves-block waves-light"><%--onclick="javascript:GetPayment();"--%>
+                            <div style="float: left; padding-right: 5px; font-size: 18px;" id="WalletBalanceAmount"></div>
+                            <div style="float: right;"><i class="mdi-action-account-balance-wallet"></i></div>
+                            <div style="clear: both;"></div>
+                        </a>
+                        </li>
+                        <li><a href="javascript:void(0);" title="Refresh" onclick="javascript:reloadPage(); return false;" class="waves-effect waves-block waves-light"><i class="mdi-notification-sync"></i></a></li>
+                        <li id="LogOutMenu"><a href="Default.aspx" onclick="javascript:Logout(); return false;" title="Logout" class="waves-effect waves-block waves-light"><i class="mdi-action-settings-power"></i></a></li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+        <!-- end header nav-->
+    </header>
+    <!-- END HEADER -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+    <!-- START MAIN -->
+    <div id="main">
+        <!-- START WRAPPER -->
+        <div class="wrapper">
+
+            <!-- START LEFT SIDEBAR NAV-->
+            <aside id="left-sidebar-nav">
+                <ul id="slide-out" class="side-nav fixed leftside-navigation">
+                    <li class="user-details cyan darken-2" id="liprofilepicdash">
+                        <div class="NavigationImg">
+                            <img src="images/download.png" id="NavigationImg" />
+                        </div>
+                        <div style="background-color: rgba(0, 0, 0, 0.51); position:relative">
+                            <%-- <div class="row" style="line-height: 0;">
+                                <div class="col col s4 m4 l4" style="margin-left: 50px;">
+                                    <img src="Images/noavatar.jpg" alt="" class="circle z-depth-2 responsive-img activator" style="height: 80px; width: 80px; max-width: 80px; padding: 1px; margin-top: 10px;" id="UserProfilePic" />
+                                </div>
+                            </div>--%>
+                            <div class="row" style="padding-top: 75px;">
+                                <div class="col col s12 m12 l12">
+                                    <a class="btn-flat dropdown-button  white-text profile-btn">Welcome</a>
+                                    <a class="btn-flat dropdown-button  white-text profile-btn" href="javascript:void(0);" id="UserName"></a>
+                                    <div class="SubsInfo">
+                                        <p class="user-roal">Subscriber ID&nbsp;</p>
+                                        <p class="user-roal" id="MembershipNo"></p>
+                                        <div style="clear: both;"></div>
+                                    </div>
+                                    <%--<div class="SubsInfo">
+                                        <p class="user-roal">MyCableTV ID&nbsp;</p>
+                                        <p class="user-roal" id="MyCableTVUID"></p>
+                                        <div style="clear: both;"></div>
+                                    </div>--%>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bold"><a id="MyDashboard" href="javascript:void(0);" onclick="document.location.replace('../MyDashboard');" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i>My <%=System.Web.HttpContext.Current.Session["OpperatorID"].ToString() %></a></li>
+                    <li class="bold"><a href="javascript:void(0);" onclick="document.location.replace('../MyProfile');" class="waves-effect waves-cyan"><i class="mdi-action-account-circle"></i>My Profile</a></li>
+                    <li class="bold"><a href="javascript:void(0);" onclick="document.location.replace('../MyTransaction');" class="waves-effect waves-cyan"><i class="mdi-av-my-library-books"></i>My Transaction</a></li>
+                    <li class="bold"><a href="javascript:void(0);" onclick="document.location.replace('../MyConnection');" class="waves-effect waves-cyan"><i class="fa fa-server" style="font-size: 19px;"></i>My Connection</a></li>
+                    <li class="bold"><a href="javascript:void(0);" onclick="document.location.replace('../MyServiceRequests');" class="waves-effect waves-cyan"><i class="mdi-communication-quick-contacts-mail"></i>My Service Requests</a></li>
+                   <%-- <li class="bold"><a href="javascript:void(0);" onclick="document.location.replace('../SubscriptionProcess.aspx');" class="waves-effect waves-cyan"><i class="fa fa-shopping-bag" style="font-size: 19px;"></i>My Orders</a></li>--%>
+                  <li class="bold"><a href="javascript:void(0);" onclick="document.location.replace('../MyInvoiceHistory');" class="waves-effect waves-cyan"><i class="fa fa-tags" style="font-size: 19px;"></i>My Invoice History</a></li>
+                      <li class="bold"><a href="javascript:void(0);" onclick="document.location.replace('../MyPaymentHistory');" class="waves-effect waves-cyan"><i class="mdi-action-history"></i>My Payment History</a></li>
+                    <li class="bold clsRatePlayStore"><a href="javascript:void(0);" onclick="javascript:RateUsOnPlayStore(); return false;" class="waves-effect waves-cyan"><i class="mdi-action-star-rate"></i>Rate us on Play Store</a></li>
+                    <li class="bold" id="LogOut" style="display: none;"><a href="javascript:void(0);" onclick="javascript:Logout(); return false;" class="waves-effect waves-cyan"><i class="mdi-action-settings-power"></i>Logout</a></li>
+
+                </ul>
+                <a id="backbtn" style="font-size: 44px; top: -62px; left: -185px; color: #FFF;" class="sidebar-collapse btn-medium waves-effect waves-light hide-on-large-only" href="javascript:void(0);" onclick="document.location.replace('../MyDashboard');"><i class="mdi-navigation-chevron-left"></i></a>
+                <a id="ResponsMenuBtn" href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan" style="background-color: #d59f25  !important;"><i class="mdi-navigation-menu"></i></a>
+            </aside>
+            <!-- END LEFT SIDEBAR NAV-->
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+            <!-- Floating Action Button -->
+            
+        <%--    <div class="fixed-action-btn" style="bottom: 50px; right: 19px;display:none">
+                <a class="btn-floating btn-large">
+                    <i class="mdi-action-stars"></i>
+                </a>
+                <ul>
+                    <li><a href="javascript:void(0);" onclick="document.location.replace('../MyDashboard');" title="DashBoard" class="btn-floating red"><i class="mdi-action-dashboard"></i></a></li>
+                    <li><a href="javascript:void(0);" onclick="document.location.replace('../MyPaymentHistory');" title="Payment History" class="btn-floating yellow darken-1"><i class="mdi-action-history"></i></a></li>
+                    <li><a href="javascript:void(0);" onclick="document.location.replace('../MyHistory');" title="View Ledger" class="btn-floating green"><i class="mdi-av-my-library-books"></i></a></li>
+                    <li><a href="javascript:void(0);" onclick="document.location.replace('../MyProfile');" title="My Profile" class="btn-floating blue"><i class="mdi-action-account-circle"></i></a></li>
+                </ul>
+            </div>--%>
+            <!-- Floating Action Button -->
+
+
+        </div>
+        <!-- END WRAPPER -->
+
+    </div>
+    <!-- END MAIN -->
+
+
+    <!-- Payment --->
+
+    <div class="lean-overlay" id="materialize-lean-overlay-2" style="z-index: 0; display: none; opacity: 0;">
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="navbar-header">
+                        <div class="navbar-brand">
+                            <div class="brandlogo" style="display: none;">
+                                <img src="Images/MyCableTvLogoIn.png" />
+                            </div>
+                        </div>
+                        <div style="float: left; margin-left: 18px; margin-top: -5px;">
+                            <label id="SubsAmtType" style="font-size: 18px; color: #FFF;"></label>
+                            <label id="TopTitleAmt" style="font-size: 18px; color: #FFF;"></label>
+                        </div>
+                        <div style="float: right; margin-top: -2px; margin-right: -10px; font-size: 18px;"><a href="javascript:void(0);" onclick="javascript:closePaymentBox(); return false;" style="color: #FFF;"><i class="fa fa-times"></i></a></div>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="model-email-content">
+
+                <div class="card">
+                    <div class="card-content">
+                        <ul class="stepper" id="MyCableTVPayment">
+                            <li class="step active">
+                                <div class="step-title">Amount</div>
+                                <div class="step-content">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="PaymentAmount" type="text" class="validate" id="txtPaymentAmount" autocomplete="off" maxlength="6" />
+                                            <label id="PaymentAmount-error" class="invalid" for="PaymentAmount" style="display: none;"></label>
+                                            <label for="txtPaymentAmount">Enter Amount</label>
+                                        </div>
+                                    </div>
+                                    <div class="step-actions">
+                                        <button class="waves-effect waves-dark btn blue next-step" data-feedback="CountinuePayMode">CONTINUE</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="step">
+                                <div class="step-title">Payment Mode</div>
+                                <div class="step-content">
+                                    <div class="row">
+                                        <div class="col s12 PaymentMode" onclick="javascript:SetPaymentMode(this); return false;">
+                                            <a href="javascript:void(0);" class="selPayMode" data-cardtype="DC" data-ispaymode="true" data-cardtypeid="1"><i class="fa fa-credit-card"></i>&nbsp;Debit Card</a>
+                                            <div class="svg">
+                                                <svg width="26" height="26" viewBox="-263.5 236.5 26 26">
+                                                    <g class="svg-success">
+                                                        <circle cx="-250.5" cy="249.5" r="12" />
+                                                        <path d="M-256.46 249.65l3.9 3.74 8.02-7.8" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="col s12 PaymentMode" onclick="javascript:SetPaymentMode(this); return false;">
+                                            <a href="javascript:void(0);" class="selPayMode" data-cardtype="NB" data-ispaymode="false" data-cardtypeid="3"><i class="fa fa-university"></i>&nbsp;Net Banking</a>
+                                            <div class="svg">
+                                                <svg width="26" height="26" viewBox="-263.5 236.5 26 26">
+                                                    <g class="svg-success">
+                                                        <circle cx="-250.5" cy="249.5" r="12" />
+                                                        <path d="M-256.46 249.65l3.9 3.74 8.02-7.8" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="col s12 PaymentMode" onclick="javascript:SetPaymentMode(this); return false;">
+                                            <a href="javascript:void(0);" class="selPayMode" data-cardtype="CC" data-ispaymode="false" data-cardtypeid="2"><i class="fa fa-credit-card"></i>&nbsp;Credit Card</a>
+                                            <div class="svg">
+                                                <svg width="26" height="26" viewBox="-263.5 236.5 26 26">
+                                                    <g class="svg-success">
+                                                        <circle cx="-250.5" cy="249.5" r="12" />
+                                                        <path d="M-256.46 249.65l3.9 3.74 8.02-7.8" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="col s12 PaymentMode" onclick="javascript:SetPaymentMode(this); return false;">
+                                            <a href="javascript:void(0);" class="selPayMode" data-cardtype="W" data-ispaymode="false" data-cardtypeid="4"><i class="fa fa-wallet"></i>&nbsp;Wallet</a>
+                                            <div class="svg">
+                                                <svg width="26" height="26" viewBox="-263.5 236.5 26 26">
+                                                    <g class="svg-success">
+                                                        <circle cx="-250.5" cy="249.5" r="12" />
+                                                        <path d="M-256.46 249.65l3.9 3.74 8.02-7.8" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="step-actions">
+                                        <button class="waves-effect waves-dark btn blue next-step" data-feedback="GetPaymentDetails">CONTINUE</button>
+                                        <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="step">
+                                <div class="step-title">Confirm Payment</div>
+                                <div class="step-content">
+                                    <div class="PayLeft">Amount</div>
+                                    <div class="PayRight" id="SubsPaymentAmount"></div>
+                                    <div class="clear"></div>
+
+                                    <div data-discount="discount" class="PayLeft hide">Discount</div>
+                                    <div data-discount="discount" class="PayRight hide" id="DiscountAmount"></div>
+                                    <div data-discount="discount" class="clear hide"></div>
+
+                                    <div data-discount="discount" class="PayLeft hide">Total Amount</div>
+                                    <div data-discount="discount" class="PayRight hide" id="AfterDisPayAmount"></div>
+                                    <div data-discount="discount" class="clear hide"></div>
+
+                                    <div data-inc="Inc" class="PayLeft">Technology Fee</div>
+                                    <div data-inc="Inc" class="PayRight" id="ConvenienceFee"></div>
+                                    <div data-inc="Inc" class="clear"></div>
+
+                                    <div class="PayLeft" style="color: #fc8002;">Payable Amount</div>
+                                    <div class="PayRight" style="color: #fc8002;" id="PayableAmount"></div>
+                                    <div class="clear"></div>
+
+                                    <div class="step-actions">
+                                        <button class="waves-effect waves-dark btn blue next-step" data-feedback="GetPaymentTransID">PAY NOW</button>
+                                        <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="font-size: 12px; background-color: #dedede; padding: 8px; text-align: justify; display:none" id="coformation">
+                    Please confirm the payment details given above. After confirmation please click on the [Pay Now] to continue payment process.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- START FOOTER -->
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                <span class="right">Powered By <a class="grey-text text-lighten-4" href="javascript:void(0);">ReliableSoft Technologies Pvt. Ltd.</a></span>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <div id="Loadingbg" style="display: none;">
+        <div class="LoadingBg">
+        </div>
+        <div class="cssload-box-loading">
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ATOMfirstRequestWithUrl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RequestUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ATOMfirstRequestWithUrlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMfirstRequestWithUrlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ATOMRequestUrl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ServerIP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMttype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMprodid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMamt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMtxncurr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMtxnscamt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMclientcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMtxnid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMtransdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMcustacc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMudf1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMudf2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMudf3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMudf4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMru" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ATOMRequestUrlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMRequestUrlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CCAvenueRequestUrl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentGateway" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerIP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="surl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="furl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="curl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txnid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productinfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="amount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="state" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zipcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ttype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMprodid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txncurr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txnscamt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="custacc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MerchantID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ChannelID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndustryTypeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WebSite" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MerchantKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CCAvenueRequestUrlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CCAvenueRequestUrlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="chkMerchantTxnStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MerchantKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MerchantTransactionIDs" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsTestUrl" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="chkMerchantTxnStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="chkMerchantTxnStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateCheckSumMobile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChannelID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndustryTypeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Theme" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Amount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WebSite" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateCheckSumMobileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerateCheckSumMobileResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetColonyDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetColonyDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetColonyDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompanyDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompanyDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCompanyDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPlanDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPlanDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPlanDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSaluteDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSaluteDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSaluteDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceTypeDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceTypeDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServiceTypeDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubcriberCurrentBillDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CompID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FinID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubcriberCurrentBillDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSubcriberCurrentBillDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubcriberDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContactNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MemberShipNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubsStatus" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubcriberDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSubcriberDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubcriberLedger">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CompID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FinID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubcriberLedgerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSubcriberLedgerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubcriberRecptDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RecpNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubcriberRecptDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSubcriberRecptDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubcriberTicketDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TicketNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubcriberTicketDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSubcriberTicketDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubcriberTicketLifeCycleDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TicketID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubcriberTicketLifeCycleDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSubcriberTicketLifeCycleDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogIn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogInResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LogInResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogOut">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogOutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LogOutResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewSubsciberRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MiddleName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ColonyID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmailAdd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PhMob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PhRes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PinCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmailAlerts" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSAlerts" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Remarks" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DOB" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SaluteID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CityID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CountryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ExistingSubs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MemShipNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SecQuesID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Answer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubsFinYear" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewSubsciberRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NewSubsciberRequestResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PaymentSave">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PGTransID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PayMode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PayStatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PaidAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Discount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PGType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BankRefNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BankCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Error" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RespCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RespMsg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NameOnCard" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CardNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CardHash" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MemShipNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentSaveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentSaveResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PayTM_VerifyPayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MerchantID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PayTM_VerifyPaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PayTM_VerifyPaymentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaytmRequestUrl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ServerIP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MerchantID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="custID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="amount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ChannelID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndustryTypeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WebSite" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AUTH_MODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PAYMENT_TYPE_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cardType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bankCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="theme" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="promocampID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderDetails" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="comments" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PanCard" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DLnumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmailID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VerifiedBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IsUserVerified" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="state" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Pincode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MerchantKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CallbackUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaytmRequestUrlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PaytmRequestUrlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PG_GetSubcriberDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MemberShipNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCallBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PG_GetSubcriberDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PG_GetSubcriberDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PG_GetTransID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IntID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CompID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FinPeriod" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DueAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PaidAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubsName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PhoneNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProductInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PG_GetTransIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PG_GetTransIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PG_RefundTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PayUTransactionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MerchantTransactionID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="payuAmount" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PG_RefundTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PG_RefundTransactionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PG_RequestUrl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PGID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentGateway" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerIP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="surl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="furl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="curl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txnid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productinfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="amount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="state" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zipcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ttype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMprodid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txncurr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txnscamt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="custacc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MerchantID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ChannelID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndustryTypeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WebSite" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MerchantKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PG_RequestUrlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PG_RequestUrlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PG_RequestUrlWithPayMode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PGID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentGateway" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerIP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="surl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="furl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="curl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txnid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productinfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="amount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="state" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zipcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ttype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ATOMprodid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txncurr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txnscamt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="custacc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MerchantID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ChannelID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndustryTypeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WebSite" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MerchantKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PayMode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BankCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PG_RequestUrlWithPayModeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PG_RequestUrlWithPayModeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PG_UpdateTransation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IntID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CompID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FinPeriod" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txnid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mihpayid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Amount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Discount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="addedon" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productinfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="state" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zipcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PG_TYPE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bank_ref_num" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bankcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name_on_card" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cardnum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cardhash" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="memshipno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DebitTypsIDs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DebitAmounts" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RefMatID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParticularID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PG_UpdateTransationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PG_UpdateTransationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PG_VerifyPayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PayUTransactionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MerchantTransactionID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="payuAmount" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PG_VerifyPaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PG_VerifyPaymentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterComplaint">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Remarks" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TicketHeadID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CompID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FinID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmpID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IsTicket" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AddEdit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TicketID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReasonID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterComplaintResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegisterComplaintResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubsciberCredentialsCreation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MemShipNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SecQuesID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Answer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubsciberCredentialsCreationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubsciberCredentialsCreationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyATOMPayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MerchantID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PGTransactionID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PGAmount" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="PGID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="PGUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PayDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyATOMPaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyATOMPaymentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyCheckSumMobile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TXNID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BANKTXNID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ORDERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TXNAMOUNT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="STATUS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TXNTYPE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GATEWAYNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RESPCODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RESPMSG" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BANKNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PAYMENTMODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="REFUNDAMT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TXNDATE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CHECKSUMHASH" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyCheckSumMobileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyCheckSumMobileResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ATOMfirstRequestWithUrlSoapIn">
+    <wsdl:part name="parameters" element="tns:ATOMfirstRequestWithUrl" />
+  </wsdl:message>
+  <wsdl:message name="ATOMfirstRequestWithUrlSoapOut">
+    <wsdl:part name="parameters" element="tns:ATOMfirstRequestWithUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ATOMRequestUrlSoapIn">
+    <wsdl:part name="parameters" element="tns:ATOMRequestUrl" />
+  </wsdl:message>
+  <wsdl:message name="ATOMRequestUrlSoapOut">
+    <wsdl:part name="parameters" element="tns:ATOMRequestUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="CCAvenueRequestUrlSoapIn">
+    <wsdl:part name="parameters" element="tns:CCAvenueRequestUrl" />
+  </wsdl:message>
+  <wsdl:message name="CCAvenueRequestUrlSoapOut">
+    <wsdl:part name="parameters" element="tns:CCAvenueRequestUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="chkMerchantTxnStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:chkMerchantTxnStatus" />
+  </wsdl:message>
+  <wsdl:message name="chkMerchantTxnStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:chkMerchantTxnStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerateCheckSumMobileSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateCheckSumMobile" />
+  </wsdl:message>
+  <wsdl:message name="GenerateCheckSumMobileSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateCheckSumMobileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetColonyDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetColonyDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetColonyDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetColonyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanyDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCompanyDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanyDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCompanyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPlanDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPlanDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetPlanDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPlanDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSaluteDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSaluteDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetSaluteDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSaluteDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceTypeDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServiceTypeDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceTypeDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServiceTypeDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSubcriberCurrentBillDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSubcriberCurrentBillDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetSubcriberCurrentBillDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSubcriberCurrentBillDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSubcriberDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSubcriberDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetSubcriberDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSubcriberDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSubcriberLedgerSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSubcriberLedger" />
+  </wsdl:message>
+  <wsdl:message name="GetSubcriberLedgerSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSubcriberLedgerResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSubcriberRecptDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSubcriberRecptDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetSubcriberRecptDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSubcriberRecptDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSubcriberTicketDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSubcriberTicketDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetSubcriberTicketDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSubcriberTicketDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSubcriberTicketLifeCycleDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSubcriberTicketLifeCycleDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetSubcriberTicketLifeCycleDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSubcriberTicketLifeCycleDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="LogInSoapIn">
+    <wsdl:part name="parameters" element="tns:LogIn" />
+  </wsdl:message>
+  <wsdl:message name="LogInSoapOut">
+    <wsdl:part name="parameters" element="tns:LogInResponse" />
+  </wsdl:message>
+  <wsdl:message name="LogOutSoapIn">
+    <wsdl:part name="parameters" element="tns:LogOut" />
+  </wsdl:message>
+  <wsdl:message name="LogOutSoapOut">
+    <wsdl:part name="parameters" element="tns:LogOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="NewSubsciberRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:NewSubsciberRequest" />
+  </wsdl:message>
+  <wsdl:message name="NewSubsciberRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:NewSubsciberRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="PaymentSaveSoapIn">
+    <wsdl:part name="parameters" element="tns:PaymentSave" />
+  </wsdl:message>
+  <wsdl:message name="PaymentSaveSoapOut">
+    <wsdl:part name="parameters" element="tns:PaymentSaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="PayTM_VerifyPaymentSoapIn">
+    <wsdl:part name="parameters" element="tns:PayTM_VerifyPayment" />
+  </wsdl:message>
+  <wsdl:message name="PayTM_VerifyPaymentSoapOut">
+    <wsdl:part name="parameters" element="tns:PayTM_VerifyPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="PaytmRequestUrlSoapIn">
+    <wsdl:part name="parameters" element="tns:PaytmRequestUrl" />
+  </wsdl:message>
+  <wsdl:message name="PaytmRequestUrlSoapOut">
+    <wsdl:part name="parameters" element="tns:PaytmRequestUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="PG_GetSubcriberDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:PG_GetSubcriberDetail" />
+  </wsdl:message>
+  <wsdl:message name="PG_GetSubcriberDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:PG_GetSubcriberDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="PG_GetTransIDSoapIn">
+    <wsdl:part name="parameters" element="tns:PG_GetTransID" />
+  </wsdl:message>
+  <wsdl:message name="PG_GetTransIDSoapOut">
+    <wsdl:part name="parameters" element="tns:PG_GetTransIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="PG_RefundTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:PG_RefundTransaction" />
+  </wsdl:message>
+  <wsdl:message name="PG_RefundTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:PG_RefundTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="PG_RequestUrlSoapIn">
+    <wsdl:part name="parameters" element="tns:PG_RequestUrl" />
+  </wsdl:message>
+  <wsdl:message name="PG_RequestUrlSoapOut">
+    <wsdl:part name="parameters" element="tns:PG_RequestUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="PG_RequestUrlWithPayModeSoapIn">
+    <wsdl:part name="parameters" element="tns:PG_RequestUrlWithPayMode" />
+  </wsdl:message>
+  <wsdl:message name="PG_RequestUrlWithPayModeSoapOut">
+    <wsdl:part name="parameters" element="tns:PG_RequestUrlWithPayModeResponse" />
+  </wsdl:message>
+  <wsdl:message name="PG_UpdateTransationSoapIn">
+    <wsdl:part name="parameters" element="tns:PG_UpdateTransation" />
+  </wsdl:message>
+  <wsdl:message name="PG_UpdateTransationSoapOut">
+    <wsdl:part name="parameters" element="tns:PG_UpdateTransationResponse" />
+  </wsdl:message>
+  <wsdl:message name="PG_VerifyPaymentSoapIn">
+    <wsdl:part name="parameters" element="tns:PG_VerifyPayment" />
+  </wsdl:message>
+  <wsdl:message name="PG_VerifyPaymentSoapOut">
+    <wsdl:part name="parameters" element="tns:PG_VerifyPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegisterComplaintSoapIn">
+    <wsdl:part name="parameters" element="tns:RegisterComplaint" />
+  </wsdl:message>
+  <wsdl:message name="RegisterComplaintSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterComplaintResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubsciberCredentialsCreationSoapIn">
+    <wsdl:part name="parameters" element="tns:SubsciberCredentialsCreation" />
+  </wsdl:message>
+  <wsdl:message name="SubsciberCredentialsCreationSoapOut">
+    <wsdl:part name="parameters" element="tns:SubsciberCredentialsCreationResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyATOMPaymentSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyATOMPayment" />
+  </wsdl:message>
+  <wsdl:message name="VerifyATOMPaymentSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyATOMPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyCheckSumMobileSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyCheckSumMobile" />
+  </wsdl:message>
+  <wsdl:message name="VerifyCheckSumMobileSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyCheckSumMobileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="integrationserviceSoap">
+    <wsdl:operation name="ATOMfirstRequestWithUrl">
+      <wsdl:input message="tns:ATOMfirstRequestWithUrlSoapIn" />
+      <wsdl:output message="tns:ATOMfirstRequestWithUrlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ATOMRequestUrl">
+      <wsdl:input message="tns:ATOMRequestUrlSoapIn" />
+      <wsdl:output message="tns:ATOMRequestUrlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CCAvenueRequestUrl">
+      <wsdl:input message="tns:CCAvenueRequestUrlSoapIn" />
+      <wsdl:output message="tns:CCAvenueRequestUrlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="chkMerchantTxnStatus">
+      <wsdl:input message="tns:chkMerchantTxnStatusSoapIn" />
+      <wsdl:output message="tns:chkMerchantTxnStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateCheckSumMobile">
+      <wsdl:input message="tns:GenerateCheckSumMobileSoapIn" />
+      <wsdl:output message="tns:GenerateCheckSumMobileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetColonyDetail">
+      <wsdl:input message="tns:GetColonyDetailSoapIn" />
+      <wsdl:output message="tns:GetColonyDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyDetail">
+      <wsdl:input message="tns:GetCompanyDetailSoapIn" />
+      <wsdl:output message="tns:GetCompanyDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterDetail">
+      <wsdl:input message="tns:GetMasterDetailSoapIn" />
+      <wsdl:output message="tns:GetMasterDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanDetail">
+      <wsdl:input message="tns:GetPlanDetailSoapIn" />
+      <wsdl:output message="tns:GetPlanDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSaluteDetail">
+      <wsdl:input message="tns:GetSaluteDetailSoapIn" />
+      <wsdl:output message="tns:GetSaluteDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceTypeDetail">
+      <wsdl:input message="tns:GetServiceTypeDetailSoapIn" />
+      <wsdl:output message="tns:GetServiceTypeDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberCurrentBillDetail">
+      <wsdl:input message="tns:GetSubcriberCurrentBillDetailSoapIn" />
+      <wsdl:output message="tns:GetSubcriberCurrentBillDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberDetail">
+      <wsdl:input message="tns:GetSubcriberDetailSoapIn" />
+      <wsdl:output message="tns:GetSubcriberDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberLedger">
+      <wsdl:input message="tns:GetSubcriberLedgerSoapIn" />
+      <wsdl:output message="tns:GetSubcriberLedgerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberRecptDetail">
+      <wsdl:input message="tns:GetSubcriberRecptDetailSoapIn" />
+      <wsdl:output message="tns:GetSubcriberRecptDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberTicketDetail">
+      <wsdl:input message="tns:GetSubcriberTicketDetailSoapIn" />
+      <wsdl:output message="tns:GetSubcriberTicketDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberTicketLifeCycleDetail">
+      <wsdl:input message="tns:GetSubcriberTicketLifeCycleDetailSoapIn" />
+      <wsdl:output message="tns:GetSubcriberTicketLifeCycleDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LogIn">
+      <wsdl:input message="tns:LogInSoapIn" />
+      <wsdl:output message="tns:LogInSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LogOut">
+      <wsdl:input message="tns:LogOutSoapIn" />
+      <wsdl:output message="tns:LogOutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NewSubsciberRequest">
+      <wsdl:input message="tns:NewSubsciberRequestSoapIn" />
+      <wsdl:output message="tns:NewSubsciberRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PaymentSave">
+      <wsdl:input message="tns:PaymentSaveSoapIn" />
+      <wsdl:output message="tns:PaymentSaveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PayTM_VerifyPayment">
+      <wsdl:input message="tns:PayTM_VerifyPaymentSoapIn" />
+      <wsdl:output message="tns:PayTM_VerifyPaymentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PaytmRequestUrl">
+      <wsdl:input message="tns:PaytmRequestUrlSoapIn" />
+      <wsdl:output message="tns:PaytmRequestUrlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PG_GetSubcriberDetail">
+      <wsdl:input message="tns:PG_GetSubcriberDetailSoapIn" />
+      <wsdl:output message="tns:PG_GetSubcriberDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PG_GetTransID">
+      <wsdl:input message="tns:PG_GetTransIDSoapIn" />
+      <wsdl:output message="tns:PG_GetTransIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PG_RefundTransaction">
+      <wsdl:input message="tns:PG_RefundTransactionSoapIn" />
+      <wsdl:output message="tns:PG_RefundTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PG_RequestUrl">
+      <wsdl:input message="tns:PG_RequestUrlSoapIn" />
+      <wsdl:output message="tns:PG_RequestUrlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PG_RequestUrlWithPayMode">
+      <wsdl:input message="tns:PG_RequestUrlWithPayModeSoapIn" />
+      <wsdl:output message="tns:PG_RequestUrlWithPayModeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PG_UpdateTransation">
+      <wsdl:input message="tns:PG_UpdateTransationSoapIn" />
+      <wsdl:output message="tns:PG_UpdateTransationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PG_VerifyPayment">
+      <wsdl:input message="tns:PG_VerifyPaymentSoapIn" />
+      <wsdl:output message="tns:PG_VerifyPaymentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterComplaint">
+      <wsdl:input message="tns:RegisterComplaintSoapIn" />
+      <wsdl:output message="tns:RegisterComplaintSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubsciberCredentialsCreation">
+      <wsdl:input message="tns:SubsciberCredentialsCreationSoapIn" />
+      <wsdl:output message="tns:SubsciberCredentialsCreationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyATOMPayment">
+      <wsdl:input message="tns:VerifyATOMPaymentSoapIn" />
+      <wsdl:output message="tns:VerifyATOMPaymentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyCheckSumMobile">
+      <wsdl:input message="tns:VerifyCheckSumMobileSoapIn" />
+      <wsdl:output message="tns:VerifyCheckSumMobileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="integrationserviceSoap" type="tns:integrationserviceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ATOMfirstRequestWithUrl">
+      <soap:operation soapAction="http://tempuri.org/ATOMfirstRequestWithUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ATOMRequestUrl">
+      <soap:operation soapAction="http://tempuri.org/ATOMRequestUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CCAvenueRequestUrl">
+      <soap:operation soapAction="http://tempuri.org/CCAvenueRequestUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="chkMerchantTxnStatus">
+      <soap:operation soapAction="http://tempuri.org/chkMerchantTxnStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateCheckSumMobile">
+      <soap:operation soapAction="http://tempuri.org/GenerateCheckSumMobile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetColonyDetail">
+      <soap:operation soapAction="http://tempuri.org/GetColonyDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyDetail">
+      <soap:operation soapAction="http://tempuri.org/GetCompanyDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterDetail">
+      <soap:operation soapAction="http://tempuri.org/GetMasterDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanDetail">
+      <soap:operation soapAction="http://tempuri.org/GetPlanDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSaluteDetail">
+      <soap:operation soapAction="http://tempuri.org/GetSaluteDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceTypeDetail">
+      <soap:operation soapAction="http://tempuri.org/GetServiceTypeDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberCurrentBillDetail">
+      <soap:operation soapAction="http://tempuri.org/GetSubcriberCurrentBillDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberDetail">
+      <soap:operation soapAction="http://tempuri.org/GetSubcriberDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberLedger">
+      <soap:operation soapAction="http://tempuri.org/GetSubcriberLedger" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberRecptDetail">
+      <soap:operation soapAction="http://tempuri.org/GetSubcriberRecptDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberTicketDetail">
+      <soap:operation soapAction="http://tempuri.org/GetSubcriberTicketDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberTicketLifeCycleDetail">
+      <soap:operation soapAction="http://tempuri.org/GetSubcriberTicketLifeCycleDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogIn">
+      <soap:operation soapAction="http://tempuri.org/LogIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogOut">
+      <soap:operation soapAction="http://tempuri.org/LogOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewSubsciberRequest">
+      <soap:operation soapAction="http://tempuri.org/NewSubsciberRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentSave">
+      <soap:operation soapAction="http://tempuri.org/PaymentSave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PayTM_VerifyPayment">
+      <soap:operation soapAction="http://tempuri.org/PayTM_VerifyPayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaytmRequestUrl">
+      <soap:operation soapAction="http://tempuri.org/PaytmRequestUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PG_GetSubcriberDetail">
+      <soap:operation soapAction="http://tempuri.org/PG_GetSubcriberDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PG_GetTransID">
+      <soap:operation soapAction="http://tempuri.org/PG_GetTransID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PG_RefundTransaction">
+      <soap:operation soapAction="http://tempuri.org/PG_RefundTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PG_RequestUrl">
+      <soap:operation soapAction="http://tempuri.org/PG_RequestUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PG_RequestUrlWithPayMode">
+      <soap:operation soapAction="http://tempuri.org/PG_RequestUrlWithPayMode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PG_UpdateTransation">
+      <soap:operation soapAction="http://tempuri.org/PG_UpdateTransation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PG_VerifyPayment">
+      <soap:operation soapAction="http://tempuri.org/PG_VerifyPayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterComplaint">
+      <soap:operation soapAction="http://tempuri.org/RegisterComplaint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubsciberCredentialsCreation">
+      <soap:operation soapAction="http://tempuri.org/SubsciberCredentialsCreation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyATOMPayment">
+      <soap:operation soapAction="http://tempuri.org/VerifyATOMPayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyCheckSumMobile">
+      <soap:operation soapAction="http://tempuri.org/VerifyCheckSumMobile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="integrationserviceSoap12" type="tns:integrationserviceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ATOMfirstRequestWithUrl">
+      <soap12:operation soapAction="http://tempuri.org/ATOMfirstRequestWithUrl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ATOMRequestUrl">
+      <soap12:operation soapAction="http://tempuri.org/ATOMRequestUrl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CCAvenueRequestUrl">
+      <soap12:operation soapAction="http://tempuri.org/CCAvenueRequestUrl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="chkMerchantTxnStatus">
+      <soap12:operation soapAction="http://tempuri.org/chkMerchantTxnStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateCheckSumMobile">
+      <soap12:operation soapAction="http://tempuri.org/GenerateCheckSumMobile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetColonyDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetColonyDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetCompanyDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetPlanDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSaluteDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetSaluteDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceTypeDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetServiceTypeDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberCurrentBillDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetSubcriberCurrentBillDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetSubcriberDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberLedger">
+      <soap12:operation soapAction="http://tempuri.org/GetSubcriberLedger" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberRecptDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetSubcriberRecptDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberTicketDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetSubcriberTicketDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubcriberTicketLifeCycleDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetSubcriberTicketLifeCycleDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogIn">
+      <soap12:operation soapAction="http://tempuri.org/LogIn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogOut">
+      <soap12:operation soapAction="http://tempuri.org/LogOut" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewSubsciberRequest">
+      <soap12:operation soapAction="http://tempuri.org/NewSubsciberRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentSave">
+      <soap12:operation soapAction="http://tempuri.org/PaymentSave" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PayTM_VerifyPayment">
+      <soap12:operation soapAction="http://tempuri.org/PayTM_VerifyPayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaytmRequestUrl">
+      <soap12:operation soapAction="http://tempuri.org/PaytmRequestUrl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PG_GetSubcriberDetail">
+      <soap12:operation soapAction="http://tempuri.org/PG_GetSubcriberDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PG_GetTransID">
+      <soap12:operation soapAction="http://tempuri.org/PG_GetTransID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PG_RefundTransaction">
+      <soap12:operation soapAction="http://tempuri.org/PG_RefundTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PG_RequestUrl">
+      <soap12:operation soapAction="http://tempuri.org/PG_RequestUrl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PG_RequestUrlWithPayMode">
+      <soap12:operation soapAction="http://tempuri.org/PG_RequestUrlWithPayMode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PG_UpdateTransation">
+      <soap12:operation soapAction="http://tempuri.org/PG_UpdateTransation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PG_VerifyPayment">
+      <soap12:operation soapAction="http://tempuri.org/PG_VerifyPayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterComplaint">
+      <soap12:operation soapAction="http://tempuri.org/RegisterComplaint" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubsciberCredentialsCreation">
+      <soap12:operation soapAction="http://tempuri.org/SubsciberCredentialsCreation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyATOMPayment">
+      <soap12:operation soapAction="http://tempuri.org/VerifyATOMPayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyCheckSumMobile">
+      <soap12:operation soapAction="http://tempuri.org/VerifyCheckSumMobile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="integrationservice">
+    <wsdl:port name="integrationserviceSoap" binding="tns:integrationserviceSoap">
+      <soap:address location="http://mctapinew.cnmsonnet.com/IntegrationService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="integrationserviceSoap12" binding="tns:integrationserviceSoap12">
+      <soap12:address location="http://mctapinew.cnmsonnet.com/IntegrationService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

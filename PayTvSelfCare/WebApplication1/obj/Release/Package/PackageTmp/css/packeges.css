@@ -1,0 +1,111 @@
+﻿.widget { margin-bottom: 2em !important; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; -webkit-background-clip: padding-box; -moz-background-clip: padding; background-clip: padding-box; }
+.padding-lg { padding: 3em !important; }
+.bg-dark { background: rgba(255, 255, 255, 0.83) !important; color: #2d2d2d !important; -webkit-box-shadow: 0px 0px 11px 0px rgba(128, 128, 128, 0.75); -moz-box-shadow: 0px 0px 11px 0px rgba(128, 128, 128, 0.75); box-shadow: 1px 0px 11px 0px rgba(128, 128, 128, 0.75); }
+.widget:before, .widget:after { content: " "; display: table; }
+.spacer-lg { margin-bottom: 40px; line-height: 40px; }
+.wrapper-lg { padding: 8em 0; }
+.bg-custom-home { background-image: url(../images/packeges/11.png); background-position: right center; background-repeat: no-repeat; width: 100%; height: 100%; }
+.form-control { color: #454c54 !important; border-width: 1px !important; border-color: #b5b5b5 !important; border-radius: 0 !important; }
+select optgroup { font-family: inherit!important; font-size: inherit !important; font-style: inherit !important; }
+.bootstrap-select.btn-group .btn .filter-option { overflow: hidden !important; position: absolute !important; left: 12px !important; right: 25px !important; text-align: left !important; }
+.btn-primary { color: #fff !important; background-color: #f0c546 !important; border-color: #f0c546 !important; width: 100%; font-size: 15px; }
+form label { font-family: inherit !important; font-weight: 100 !important; font-size: 13px !important; text-transform: uppercase; letter-spacing: .05em !important; color: #333 !important; }
+.bootstrap-select.form-control { margin-bottom: 0 !important; padding: 0 !important; border: 0 !important; }
+/*All Packeges Start*/
+.shadow--long-light.state:focus, .shadow--long-light.state:hover { box-shadow: 0 15px 45px 0 rgba(0,0,0,.2); }
+.card.pricing { max-width: 360px; margin-left: auto; margin-top: 15px; margin-right: auto; position: relative; }
+.card { width: 100%; transition: all ease .3s; background-color: #fff; background-repeat: no-repeat; background-position: center center; background-size: cover; margin: 0; border: none; overflow: visible; }
+.shadow--long-light { box-shadow: 0 0 15px 0 rgba(0,0,0,.1); }
+.card { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-bottom: 1rem; border: 1px solid #e6e6e6; border-radius: 0; background: #fefefe; box-shadow: none; overflow: hidden; color: #0a0a0a; }
+    .card.pricing .card__head { min-height: 279px; padding: 18px 30px 30px; border-bottom: 1px solid #e2e7eb; }
+    .card.pricing .plan-name { font-weight: 400; font-size: 16px; }
+    .card.pricing .plan-pricing { margin: 28px 0; color: #f0c546; }
+.numbers__figure--large { font-size: 40px; font-weight: 300; line-height: 1; margin-bottom: 10px; color: #212835; }
+.numbers__figure--large, .numbers__label--large { display: block; margin: 0 auto; }
+.button.primary:active, .button.primary:focus, .button.primary:hover, .button:active, .button:focus, .button:hover { color: #fff; border-color: #f0c546; background-color: #f0c546; text-decoration: none; }
+.card.pricing .button { display: block; float: left; width: 47%; font-size: 14px; padding: 15px 0px; margin: 0px 3px; color: #333333; }
+    .card.pricing .button:hover { color: #fff !important; }
+.button, .button.primary { font-size: 18px; font-weight: 400; line-height: 1; margin: 0; padding: 13px 30px; display: inline-block; position: relative; transition: all ease .3s; color: #d8a023; background-color: transparent; border: 1px solid #ffbf00; cursor: pointer; }
+.card__body { padding: 0; text-align: center; float: left; width: 100%; }
+
+.plan-pricing input { position: absolute; opacity: 0; cursor: pointer; z-index: 99; height: 18px; width: 18px; margin: 17px 0px 0px 12px; }
+
+/* Create a custom radio button */
+.checkmark { position: absolute; height: 10px; width: 10px; margin-top: 16px; margin-left: 13px; color: #636161; font-size: 24px; background-color: #ccc; text-align: center; padding: 10px; border: #f0c546; }
+
+/* On mouse-over, add a grey background color */
+.plan-pricing:hover input ~ .checkmark { background-color: #ccc; }
+
+/* When the radio button is checked, add a blue background */
+.plan-pricing input:checked ~ .checkmark { background-color: #f0c546; }
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after { position: absolute; display: none; content: "\f00c"; font-family: 'FontAwesome'; font-size: 16px; color: #fff; }
+
+/* Show the indicator (dot/circle) when checked */
+.plan-pricing input:checked ~ .checkmark:after { display: block; }
+
+/* Style the indicator (dot/circle) */
+.plan-pricing .checkmark:after { top: 2px; left: 2px; width: 8px; height: 8px; border-radius: 50%; background: #f0c546; }
+
+
+
+/* 1. Ensure this sits above everything when visible */
+.modal { position: absolute; z-index: 10000; /* 1 */ top: 0; left: 0; visibility: hidden; width: 100%; height: 100%; }
+
+    .modal.is-visible { visibility: visible; display: block; }
+
+    .modal.is-hidden { visibility: hidden; display: none; }
+
+.modal-overlay { position: fixed; z-index: 10; top: 0; left: 0; width: 100%; height: 100%; background: hsla(0, 0%, 0%, 0.5); visibility: hidden; opacity: 0; transition: visibility 0s linear 0.3s, opacity 0.3s; }
+
+.modal.is-visible .modal-overlay { opacity: 1; visibility: visible; transition-delay: 0s; }
+
+.modal-wrapper { position: absolute; z-index: 9999; top: 6em; left: 50%; width: 32em; margin-left: -16em; background-color: #fff; box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35); }
+
+.modal-transition { transition: all 0.3s 0.12s; transform: translateY(-10%); opacity: 0; }
+
+.modal.is-visible .modal-transition { transform: translateY(0); opacity: 1; }
+
+.modal-header,
+.modal-content { padding: 1em; }
+
+.modal-header { position: relative; background-color: #fff; box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.06); border-bottom: 1px solid #e8e8e8; }
+
+.modal-close { position: absolute; top: 0; right: 0; padding: 1em; color: #aaa; background: none; border: 0; }
+
+    .modal-close:hover { color: #777; }
+
+.modal-heading { font-size: 1.125em; margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.modal-content > *:first-child { margin-top: 0; }
+
+.modal-content > *:last-child { margin-bottom: 0; }
+
+
+/*Packegs Tabs*/
+.tabs-style-2 .nav-tabs { border-bottom: 1px solid #f0c546; }
+.nav-tabs { -webkit-box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.04); box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.04); border-bottom: 1px solid #e84c3d; margin-top: 15px; }
+.tabs-style-2 .nav-tabs > li.active > a, .tabs-style-2 .nav-tabs > li.active > a:hover, .tabs-style-2 .nav-tabs > li.active > a:focus, .tabs-style-2 .nav-tabs > li > a:hover { border: 1px solid #e84c3d; background-color: #e84c3d; color: #ffffff; }
+    .tabs-style-2 .nav-tabs > li.active > a, .tabs-style-2 .nav-tabs > li.active > a:hover, .tabs-style-2 .nav-tabs > li.active > a:focus, .tabs-style-2 .nav-tabs > li > a:hover { -webkit-box-shadow: none; box-shadow: none; border: 1px solid #f0c546; background-color: #f0c546; color: #ffffff; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { color: #555555; cursor: default; background-color: #fff; border: 1px solid #ddd; border-bottom-color: transparent; }
+.nav-tabs > li > a:hover { border-color: #f0f0f0 #f0f0f0 #ebebeb; background-color: #fafafa; }
+.nav-tabs > li > a:hover { border-color: #eeeeee #eeeeee #ddd; }
+.nav > li > a:hover, .nav > li > a:focus { text-decoration: none; background-color: #eeeeee; }
+.nav-tabs > li > a { font-size: 13px; text-transform: uppercase; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; padding: 12px 25px; position: relative; color: #666666; }
+.nav-tabs > li > a { margin-right: 2px; line-height: 1.42857143; border: 1px solid transparent; border-radius: 4px 4px 0 0; }
+
+.accordion { width: 100%; border-radius: 5px; overflow: hidden; margin: 20px auto; }
+
+    .accordion .item .heading { height: 50px; line-height: 50px; font-size: 17px; cursor: pointer; color: #332e33; padding-left: 40px; background: #e8e8e8 url('../images/packeges/arrow.png') no-repeat; background-position: left 13px bottom -5px; border-bottom: 1px solid #ffffff; box-sizing: border-box; }
+
+    .accordion .item.open .heading,
+    .accordion .item.open:last-child .heading { border: 0; pointer-events: none; }
+
+    .accordion .item.open .heading { background-position: left 13px top -9px; }
+
+    .accordion .item .contents { display: none; padding: 15px; background: #fff; font-size: 14px; margin-bottom: 0px !important; }
+.channelsmain { padding: 10px; /* float: left; */ text-align: center; color: black; width: fit-content; display: inline-block; }
+.selectall { float: right; position: absolute; width: 95%; text-align: right; margin-top: -10px; }
+.pack_select { cursor: pointer; background: #b7b7b7; padding: 6px; text-align: center; color: #fff; font-size: 14px; }
+.select { background: #f0c546 !important; }
